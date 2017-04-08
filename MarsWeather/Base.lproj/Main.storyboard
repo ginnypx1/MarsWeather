@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MarsWeather" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="idF-mu-Fqg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="556"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HwA-He-Ptf">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="278"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZcL-25-rGc">
+                                                <rect key="frame" x="16" y="24" width="288" height="55.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="866-MG-9Ee">
+                                                        <rect key="frame" x="0.0" y="0.0" width="224.5" height="31.5"/>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                                        <color key="textColor" red="0.25490196078431371" green="0.45882352941176469" blue="0.019607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Earth Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P1A-O7-DrA">
+                                                        <rect key="frame" x="0.0" y="26.5" width="224.5" height="29"/>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
+                                                        <color key="textColor" red="0.25490196078431371" green="0.45882352941176469" blue="0.019607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunny" translatesAutoresizingMaskIntoConstraints="NO" id="TM9-KL-UMw">
+                                                        <rect key="frame" x="232.5" y="0.0" width="55.5" height="55.5"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="866-MG-9Ee" firstAttribute="leading" secondItem="ZcL-25-rGc" secondAttribute="leading" id="1sQ-NL-Z4g"/>
+                                                    <constraint firstAttribute="trailing" secondItem="TM9-KL-UMw" secondAttribute="trailing" id="4wh-Be-UE5"/>
+                                                    <constraint firstItem="TM9-KL-UMw" firstAttribute="width" secondItem="ZcL-25-rGc" secondAttribute="height" multiplier="1:1" id="HRm-3E-AEV"/>
+                                                    <constraint firstAttribute="bottom" secondItem="TM9-KL-UMw" secondAttribute="bottom" id="Hcz-3r-l1u"/>
+                                                    <constraint firstItem="TM9-KL-UMw" firstAttribute="top" secondItem="ZcL-25-rGc" secondAttribute="top" id="IPg-6z-Zmo"/>
+                                                    <constraint firstItem="TM9-KL-UMw" firstAttribute="leading" secondItem="866-MG-9Ee" secondAttribute="trailing" constant="8" id="Jo8-CS-dzX"/>
+                                                    <constraint firstItem="866-MG-9Ee" firstAttribute="top" secondItem="ZcL-25-rGc" secondAttribute="top" id="OTX-oe-HyQ"/>
+                                                    <constraint firstItem="P1A-O7-DrA" firstAttribute="leading" secondItem="ZcL-25-rGc" secondAttribute="leading" id="lQR-Ou-n6p"/>
+                                                    <constraint firstItem="TM9-KL-UMw" firstAttribute="leading" secondItem="P1A-O7-DrA" secondAttribute="trailing" constant="8" id="mG7-yE-3OV"/>
+                                                    <constraint firstAttribute="bottom" secondItem="P1A-O7-DrA" secondAttribute="bottom" id="xK5-ly-1ma"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cd2-fQ-QAd">
+                                                <rect key="frame" x="16" y="87.5" width="288" height="174.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1bF-UQ-w4Z">
+                                                        <rect key="frame" x="0.0" y="0.0" width="144" height="174.5"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FWt-kV-n4C">
+                                                                <rect key="frame" x="0.0" y="0.0" width="144" height="174.5"/>
+                                                                <subviews>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="earth" translatesAutoresizingMaskIntoConstraints="NO" id="9l7-at-aMe">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="144" height="174.5"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x7I-0c-M8z">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="144" height="174.5"/>
+                                                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="100"/>
+                                                                        <color key="textColor" red="0.96470588239999999" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="9l7-at-aMe" firstAttribute="top" secondItem="FWt-kV-n4C" secondAttribute="top" id="Cwb-Le-7oo"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="9l7-at-aMe" secondAttribute="bottom" id="DyL-Ks-OGc"/>
+                                                                    <constraint firstItem="9l7-at-aMe" firstAttribute="leading" secondItem="FWt-kV-n4C" secondAttribute="leading" id="NbH-aR-yKu"/>
+                                                                    <constraint firstItem="x7I-0c-M8z" firstAttribute="leading" secondItem="FWt-kV-n4C" secondAttribute="leading" id="Rb7-wi-pj5"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="9l7-at-aMe" secondAttribute="trailing" id="XGR-J1-iwv"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="x7I-0c-M8z" secondAttribute="bottom" id="emd-MF-aBY"/>
+                                                                    <constraint firstItem="x7I-0c-M8z" firstAttribute="top" secondItem="FWt-kV-n4C" secondAttribute="top" id="tcj-ZW-pyj"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="x7I-0c-M8z" secondAttribute="trailing" id="vEA-Fg-aya"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="jbU-zH-Ax6">
+                                                        <rect key="frame" x="144" y="0.0" width="144" height="174.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max Temperature" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GFu-OG-J1R">
+                                                                <rect key="frame" x="0.0" y="0.0" width="144" height="15"/>
+                                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                                                                <color key="textColor" red="0.25490196079999999" green="0.45882352939999999" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hFS-m5-7Ay">
+                                                                <rect key="frame" x="0.0" y="21" width="144" height="19"/>
+                                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                                                <color key="textColor" red="0.96470588239999999" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Min Temperature" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ibI-OT-0TT">
+                                                                <rect key="frame" x="0.0" y="46" width="144" height="15"/>
+                                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                                                                <color key="textColor" red="0.25490196079999999" green="0.45882352939999999" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G9Y-2N-QR3">
+                                                                <rect key="frame" x="0.0" y="67" width="144" height="18.5"/>
+                                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                                                <color key="textColor" red="0.96470588239999999" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Humidity" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xEN-6O-3tb">
+                                                                <rect key="frame" x="0.0" y="91.5" width="144" height="15"/>
+                                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                                                                <color key="textColor" red="0.25490196079999999" green="0.45882352939999999" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LkL-xB-YSH">
+                                                                <rect key="frame" x="0.0" y="112.5" width="144" height="19"/>
+                                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                                                <color key="textColor" red="0.96470588239999999" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wind Speed" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nii-NN-0eb">
+                                                                <rect key="frame" x="0.0" y="137.5" width="144" height="15"/>
+                                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                                                                <color key="textColor" red="0.25490196079999999" green="0.45882352939999999" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fap-9Z-Xy4">
+                                                                <rect key="frame" x="0.0" y="158.5" width="144" height="16"/>
+                                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                                                <color key="textColor" red="0.96470588239999999" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="ZcL-25-rGc" firstAttribute="leading" secondItem="HwA-He-Ptf" secondAttribute="leading" constant="16" id="0aO-ti-jsj"/>
+                                            <constraint firstItem="cd2-fQ-QAd" firstAttribute="top" secondItem="ZcL-25-rGc" secondAttribute="bottom" constant="8" id="6OT-xY-q9j"/>
+                                            <constraint firstItem="ZcL-25-rGc" firstAttribute="top" secondItem="HwA-He-Ptf" secondAttribute="top" constant="24" id="Cok-Qh-hmu"/>
+                                            <constraint firstAttribute="bottom" secondItem="cd2-fQ-QAd" secondAttribute="bottom" constant="16" id="IZf-sr-jxl"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZcL-25-rGc" secondAttribute="trailing" constant="16" id="Qea-Ff-rAf"/>
+                                            <constraint firstItem="ZcL-25-rGc" firstAttribute="height" secondItem="HwA-He-Ptf" secondAttribute="height" multiplier="0.2" id="cV8-W1-Rgq"/>
+                                            <constraint firstItem="cd2-fQ-QAd" firstAttribute="leading" secondItem="HwA-He-Ptf" secondAttribute="leading" constant="16" id="jfB-Qo-eKN"/>
+                                            <constraint firstAttribute="trailing" secondItem="cd2-fQ-QAd" secondAttribute="trailing" constant="16" id="yoL-YK-51U"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jdU-41-LOL">
+                                        <rect key="frame" x="0.0" y="278" width="320" height="278"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mHh-zA-K8i">
+                                                <rect key="frame" x="16" y="24" width="288" height="55.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Sol" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pdh-f2-eLG">
+                                                        <rect key="frame" x="0.0" y="0.0" width="224.5" height="31.5"/>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                                        <color key="textColor" red="0.7803921568627451" green="0.28627450980392155" blue="0.082352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Curiosity Rover, Mars" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OsQ-Sq-sKI">
+                                                        <rect key="frame" x="0.0" y="26.5" width="224.5" height="29"/>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
+                                                        <color key="textColor" red="0.7803921568627451" green="0.28627450980392155" blue="0.082352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunny" translatesAutoresizingMaskIntoConstraints="NO" id="w71-gi-TZU">
+                                                        <rect key="frame" x="232.5" y="0.0" width="55.5" height="55.5"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="OsQ-Sq-sKI" firstAttribute="leading" secondItem="mHh-zA-K8i" secondAttribute="leading" id="IFm-qQ-9fK"/>
+                                                    <constraint firstItem="w71-gi-TZU" firstAttribute="leading" secondItem="pdh-f2-eLG" secondAttribute="trailing" constant="8" id="ITn-Qa-9p2"/>
+                                                    <constraint firstItem="w71-gi-TZU" firstAttribute="top" secondItem="mHh-zA-K8i" secondAttribute="top" id="P7f-b4-g4O"/>
+                                                    <constraint firstAttribute="bottom" secondItem="w71-gi-TZU" secondAttribute="bottom" id="fRl-Aa-qV1"/>
+                                                    <constraint firstItem="w71-gi-TZU" firstAttribute="leading" secondItem="OsQ-Sq-sKI" secondAttribute="trailing" constant="8" id="jJE-yQ-xGp"/>
+                                                    <constraint firstAttribute="bottom" secondItem="OsQ-Sq-sKI" secondAttribute="bottom" id="qzy-zq-W7S"/>
+                                                    <constraint firstAttribute="trailing" secondItem="w71-gi-TZU" secondAttribute="trailing" id="rwx-il-uVf"/>
+                                                    <constraint firstItem="pdh-f2-eLG" firstAttribute="top" secondItem="mHh-zA-K8i" secondAttribute="top" id="t8M-Gz-3vR"/>
+                                                    <constraint firstItem="w71-gi-TZU" firstAttribute="width" secondItem="mHh-zA-K8i" secondAttribute="height" multiplier="1:1" id="w48-Wt-cLL"/>
+                                                    <constraint firstItem="pdh-f2-eLG" firstAttribute="leading" secondItem="mHh-zA-K8i" secondAttribute="leading" id="w6D-rP-rV3"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="U0F-Hr-0Yh">
+                                                <rect key="frame" x="16" y="87.5" width="288" height="174.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eOx-M7-9On">
+                                                        <rect key="frame" x="0.0" y="0.0" width="144" height="174.5"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cDo-eG-6fn">
+                                                                <rect key="frame" x="0.0" y="0.0" width="144" height="174.5"/>
+                                                                <subviews>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mars" translatesAutoresizingMaskIntoConstraints="NO" id="Wfx-H0-dId">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="144" height="174.5"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2lh-PV-Jei">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="144" height="174.5"/>
+                                                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="100"/>
+                                                                        <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="Wfx-H0-dId" firstAttribute="leading" secondItem="cDo-eG-6fn" secondAttribute="leading" id="28w-AB-EiA"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="Wfx-H0-dId" secondAttribute="bottom" id="8b5-qB-MFT"/>
+                                                                    <constraint firstItem="Wfx-H0-dId" firstAttribute="top" secondItem="cDo-eG-6fn" secondAttribute="top" id="9hO-kr-5j0"/>
+                                                                    <constraint firstItem="2lh-PV-Jei" firstAttribute="leading" secondItem="cDo-eG-6fn" secondAttribute="leading" id="Hi4-hU-qht"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="Wfx-H0-dId" secondAttribute="trailing" id="OpR-rv-zg3"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="2lh-PV-Jei" secondAttribute="trailing" id="RAu-0u-XWD"/>
+                                                                    <constraint firstItem="2lh-PV-Jei" firstAttribute="top" secondItem="cDo-eG-6fn" secondAttribute="top" id="SNq-cF-5WY"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="2lh-PV-Jei" secondAttribute="bottom" id="cTM-LV-2Je"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="pG5-Vy-Nqh">
+                                                        <rect key="frame" x="144" y="0.0" width="144" height="174.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max Temperature" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AzP-WJ-P0F">
+                                                                <rect key="frame" x="0.0" y="0.0" width="144" height="14.5"/>
+                                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                                                                <color key="textColor" red="0.78039215689999997" green="0.28627450980000002" blue="0.08235294118" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hDE-nY-dAo">
+                                                                <rect key="frame" x="0.0" y="20.5" width="144" height="19.5"/>
+                                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                                                <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Min Temperature" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7JF-NL-WEA">
+                                                                <rect key="frame" x="0.0" y="46" width="144" height="14.5"/>
+                                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                                                                <color key="textColor" red="0.78039215689999997" green="0.28627450980000002" blue="0.08235294118" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dYE-lH-YC7">
+                                                                <rect key="frame" x="0.0" y="66.5" width="144" height="19.5"/>
+                                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                                                <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pressure" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BWt-GO-2NC">
+                                                                <rect key="frame" x="0.0" y="92" width="144" height="14.5"/>
+                                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                                                                <color key="textColor" red="0.78039215689999997" green="0.28627450980000002" blue="0.08235294118" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3ku-BE-Dxz">
+                                                                <rect key="frame" x="0.0" y="112.5" width="144" height="19.5"/>
+                                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                                                <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wind Speed" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aM3-n1-Qiu">
+                                                                <rect key="frame" x="0.0" y="138" width="144" height="14.5"/>
+                                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                                                                <color key="textColor" red="0.78039215689999997" green="0.28627450980000002" blue="0.08235294118" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0nt-Xg-LhM">
+                                                                <rect key="frame" x="0.0" y="158.5" width="144" height="16"/>
+                                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                                                <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="U0F-Hr-0Yh" secondAttribute="bottom" constant="16" id="0PB-xe-75b"/>
+                                            <constraint firstItem="mHh-zA-K8i" firstAttribute="height" secondItem="jdU-41-LOL" secondAttribute="height" multiplier="0.2" id="L2L-Zb-CHS"/>
+                                            <constraint firstAttribute="trailing" secondItem="mHh-zA-K8i" secondAttribute="trailing" constant="16" id="Squ-f1-myg"/>
+                                            <constraint firstItem="mHh-zA-K8i" firstAttribute="leading" secondItem="jdU-41-LOL" secondAttribute="leading" constant="16" id="V7k-Bh-glR"/>
+                                            <constraint firstAttribute="trailing" secondItem="U0F-Hr-0Yh" secondAttribute="trailing" constant="16" id="ZOH-VZ-xdJ"/>
+                                            <constraint firstItem="U0F-Hr-0Yh" firstAttribute="leading" secondItem="jdU-41-LOL" secondAttribute="leading" constant="16" id="dHF-Y8-1oZ"/>
+                                            <constraint firstItem="mHh-zA-K8i" firstAttribute="top" secondItem="jdU-41-LOL" secondAttribute="top" constant="24" id="kWs-1x-NnF"/>
+                                            <constraint firstItem="U0F-Hr-0Yh" firstAttribute="top" secondItem="mHh-zA-K8i" secondAttribute="bottom" constant="8" id="wJw-Ss-hEN"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <variation key="heightClass=compact-widthClass=compact" axis="horizontal"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTy-oP-7Cp">
+                                <rect key="frame" x="32" y="541" width="256" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Powered by Dark Sky"/>
+                                <connections>
+                                    <action selector="linkToDarkSky:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U5b-RA-tbA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97249348958333337" green="0.96959092881944442" blue="0.96435546875" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="idF-mu-Fqg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5RL-SP-08j"/>
+                            <constraint firstItem="sTy-oP-7Cp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="M5f-Ej-Mz4"/>
+                            <constraint firstItem="idF-mu-Fqg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="MRy-tr-GqP"/>
+                            <constraint firstAttribute="trailing" secondItem="idF-mu-Fqg" secondAttribute="trailing" id="Olx-JQ-aHg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="idF-mu-Fqg" secondAttribute="bottom" constant="12" id="WUV-8L-Uo7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sTy-oP-7Cp" secondAttribute="bottom" id="u2s-lZ-XfV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sTy-oP-7Cp" secondAttribute="trailing" constant="16" id="zaX-B6-Et8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="earthDateLabel" destination="866-MG-9Ee" id="qVo-nd-d9B"/>
+                        <outlet property="earthHumidityLabel" destination="LkL-xB-YSH" id="baY-GU-K1V"/>
+                        <outlet property="earthLocationLabel" destination="P1A-O7-DrA" id="Vf2-FS-UNN"/>
+                        <outlet property="earthMaxTemperatureLabel" destination="hFS-m5-7Ay" id="Q3i-Uh-mZj"/>
+                        <outlet property="earthMinTemperatureLabel" destination="G9Y-2N-QR3" id="rrM-WJ-6fG"/>
+                        <outlet property="earthTemperatureLabel" destination="x7I-0c-M8z" id="b8L-Aq-pxf"/>
+                        <outlet property="earthWeatherIcon" destination="TM9-KL-UMw" id="mop-zF-3ji"/>
+                        <outlet property="earthWindSpeedLabel" destination="Fap-9Z-Xy4" id="maP-JC-cJ9"/>
+                        <outlet property="marsDateLabel" destination="pdh-f2-eLG" id="DnM-ZO-ovi"/>
+                        <outlet property="marsLocationLabel" destination="OsQ-Sq-sKI" id="DWs-IY-TZz"/>
+                        <outlet property="marsMaxTemperatureLabel" destination="hDE-nY-dAo" id="gbo-2a-ccw"/>
+                        <outlet property="marsMinTemperatureLabel" destination="dYE-lH-YC7" id="TeA-nS-oME"/>
+                        <outlet property="marsPressureLabel" destination="3ku-BE-Dxz" id="6Iz-vx-6Lh"/>
+                        <outlet property="marsTemperatureLabel" destination="2lh-PV-Jei" id="mlb-9h-Sbs"/>
+                        <outlet property="marsWeatherIcon" destination="w71-gi-TZU" id="q9a-1E-24f"/>
+                        <outlet property="marsWindSpeedLabel" destination="0nt-Xg-LhM" id="r8g-6M-S6R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="earth" width="800" height="812"/>
+        <image name="mars" width="456" height="456"/>
+        <image name="sunny" width="2376" height="1584"/>
+    </resources>
+</document>

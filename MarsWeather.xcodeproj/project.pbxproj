@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		346A191F1E9422E6003F3683 /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346A191E1E9422E6003F3683 /* ExtensionViewController.swift */; };
+		346A19271E94240D003F3683 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346A19261E94240D003F3683 /* Reachability.swift */; };
+		346A19291E942518003F3683 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346A19281E942518003F3683 /* Alerts.swift */; };
+		34DF57011E84758D00C311BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF57001E84758D00C311BD /* AppDelegate.swift */; };
+		34DF57031E84758D00C311BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF57021E84758D00C311BD /* ViewController.swift */; };
+		34DF57061E84758D00C311BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34DF57041E84758D00C311BD /* Main.storyboard */; };
+		34DF57081E84758D00C311BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34DF57071E84758D00C311BD /* Assets.xcassets */; };
+		34DF570B1E84758D00C311BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34DF57091E84758D00C311BD /* LaunchScreen.storyboard */; };
+		34DF57161E84758E00C311BD /* MarsWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF57151E84758E00C311BD /* MarsWeatherTests.swift */; };
+		34DF57211E847E6200C311BD /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF57201E847E6200C311BD /* WeatherModel.swift */; };
+		34DF57231E84805E00C311BD /* MarsRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF57221E84805E00C311BD /* MarsRequestModel.swift */; };
+		34DF57251E8485B200C311BD /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF57241E8485B200C311BD /* Client.swift */; };
+		34DF572D1E848A3900C311BD /* MarsWeatherSlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF572C1E848A3900C311BD /* MarsWeatherSlowTests.swift */; };
+		34EC078D1E85D2E800185006 /* Private.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EC078C1E85D2E800185006 /* Private.swift */; };
+		34EC078F1E85D3DE00185006 /* DarkSkyRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EC078E1E85D3DD00185006 /* DarkSkyRequestModel.swift */; };
+		34F17FF11E8713B100D873B8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F17FF01E8713B100D873B8 /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		34DF57121E84758E00C311BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34DF56F51E84758C00C311BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34DF56FC1E84758C00C311BD;
+			remoteInfo = MarsWeather;
+		};
+		34DF572F1E848A3900C311BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34DF56F51E84758C00C311BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34DF56FC1E84758C00C311BD;
+			remoteInfo = MarsWeather;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		346A191E1E9422E6003F3683 /* ExtensionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
+		346A19261E94240D003F3683 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		346A19281E942518003F3683 /* Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		34DF56FD1E84758D00C311BD /* MarsWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarsWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34DF57001E84758D00C311BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		34DF57021E84758D00C311BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		34DF57051E84758D00C311BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		34DF57071E84758D00C311BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34DF570A1E84758D00C311BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		34DF570C1E84758D00C311BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34DF57111E84758E00C311BD /* MarsWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarsWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		34DF57151E84758E00C311BD /* MarsWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsWeatherTests.swift; sourceTree = "<group>"; };
+		34DF57171E84758E00C311BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34DF57201E847E6200C311BD /* WeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		34DF57221E84805E00C311BD /* MarsRequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarsRequestModel.swift; sourceTree = "<group>"; };
+		34DF57241E8485B200C311BD /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		34DF572A1E848A3800C311BD /* MarsWeatherSlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarsWeatherSlowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		34DF572C1E848A3900C311BD /* MarsWeatherSlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsWeatherSlowTests.swift; sourceTree = "<group>"; };
+		34DF572E1E848A3900C311BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34EC078C1E85D2E800185006 /* Private.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Private.swift; sourceTree = "<group>"; };
+		34EC078E1E85D3DD00185006 /* DarkSkyRequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkSkyRequestModel.swift; sourceTree = "<group>"; };
+		34F17FF01E8713B100D873B8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34DF56FA1E84758C00C311BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34F17FF11E8713B100D873B8 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34DF570E1E84758E00C311BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34DF57271E848A3800C311BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		346A19201E94230B003F3683 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				346A19231E94233D003F3683 /* Client */,
+				34DF57201E847E6200C311BD /* WeatherModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		346A19211E942312003F3683 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				34DF57021E84758D00C311BD /* ViewController.swift */,
+				346A191E1E9422E6003F3683 /* ExtensionViewController.swift */,
+				346A19281E942518003F3683 /* Alerts.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		346A19221E94231D003F3683 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		346A19231E94233D003F3683 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				34DF57241E8485B200C311BD /* Client.swift */,
+				346A19251E942350003F3683 /* DarkSky API */,
+				346A19241E942347003F3683 /* NASA API */,
+			);
+			name = Client;
+			sourceTree = "<group>";
+		};
+		346A19241E942347003F3683 /* NASA API */ = {
+			isa = PBXGroup;
+			children = (
+				34DF57221E84805E00C311BD /* MarsRequestModel.swift */,
+			);
+			name = "NASA API";
+			sourceTree = "<group>";
+		};
+		346A19251E942350003F3683 /* DarkSky API */ = {
+			isa = PBXGroup;
+			children = (
+				34EC078E1E85D3DD00185006 /* DarkSkyRequestModel.swift */,
+			);
+			name = "DarkSky API";
+			sourceTree = "<group>";
+		};
+		34DF56F41E84758C00C311BD = {
+			isa = PBXGroup;
+			children = (
+				34DF56FF1E84758D00C311BD /* MarsWeather */,
+				34DF57141E84758E00C311BD /* MarsWeatherTests */,
+				34DF572B1E848A3900C311BD /* MarsWeatherSlowTests */,
+				34DF56FE1E84758D00C311BD /* Products */,
+				34F17FEF1E8713B000D873B8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		34DF56FE1E84758D00C311BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34DF56FD1E84758D00C311BD /* MarsWeather.app */,
+				34DF57111E84758E00C311BD /* MarsWeatherTests.xctest */,
+				34DF572A1E848A3800C311BD /* MarsWeatherSlowTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34DF56FF1E84758D00C311BD /* MarsWeather */ = {
+			isa = PBXGroup;
+			children = (
+				34DF57001E84758D00C311BD /* AppDelegate.swift */,
+				346A19201E94230B003F3683 /* Model */,
+				346A19211E942312003F3683 /* View */,
+				346A19221E94231D003F3683 /* Controller */,
+				34DF57041E84758D00C311BD /* Main.storyboard */,
+				34DF57071E84758D00C311BD /* Assets.xcassets */,
+				34DF57091E84758D00C311BD /* LaunchScreen.storyboard */,
+				34DF570C1E84758D00C311BD /* Info.plist */,
+				34EC078C1E85D2E800185006 /* Private.swift */,
+				346A19261E94240D003F3683 /* Reachability.swift */,
+			);
+			path = MarsWeather;
+			sourceTree = "<group>";
+		};
+		34DF57141E84758E00C311BD /* MarsWeatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				34DF57151E84758E00C311BD /* MarsWeatherTests.swift */,
+				34DF57171E84758E00C311BD /* Info.plist */,
+			);
+			path = MarsWeatherTests;
+			sourceTree = "<group>";
+		};
+		34DF572B1E848A3900C311BD /* MarsWeatherSlowTests */ = {
+			isa = PBXGroup;
+			children = (
+				34DF572C1E848A3900C311BD /* MarsWeatherSlowTests.swift */,
+				34DF572E1E848A3900C311BD /* Info.plist */,
+			);
+			path = MarsWeatherSlowTests;
+			sourceTree = "<group>";
+		};
+		34F17FEF1E8713B000D873B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34F17FF01E8713B100D873B8 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		34DF56FC1E84758C00C311BD /* MarsWeather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34DF571A1E84758E00C311BD /* Build configuration list for PBXNativeTarget "MarsWeather" */;
+			buildPhases = (
+				34DF56F91E84758C00C311BD /* Sources */,
+				34DF56FA1E84758C00C311BD /* Frameworks */,
+				34DF56FB1E84758C00C311BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarsWeather;
+			productName = MarsWeather;
+			productReference = 34DF56FD1E84758D00C311BD /* MarsWeather.app */;
+			productType = "com.apple.product-type.application";
+		};
+		34DF57101E84758E00C311BD /* MarsWeatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34DF571D1E84758E00C311BD /* Build configuration list for PBXNativeTarget "MarsWeatherTests" */;
+			buildPhases = (
+				34DF570D1E84758E00C311BD /* Sources */,
+				34DF570E1E84758E00C311BD /* Frameworks */,
+				34DF570F1E84758E00C311BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34DF57131E84758E00C311BD /* PBXTargetDependency */,
+			);
+			name = MarsWeatherTests;
+			productName = MarsWeatherTests;
+			productReference = 34DF57111E84758E00C311BD /* MarsWeatherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		34DF57291E848A3800C311BD /* MarsWeatherSlowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34DF57311E848A3A00C311BD /* Build configuration list for PBXNativeTarget "MarsWeatherSlowTests" */;
+			buildPhases = (
+				34DF57261E848A3800C311BD /* Sources */,
+				34DF57271E848A3800C311BD /* Frameworks */,
+				34DF57281E848A3800C311BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34DF57301E848A3900C311BD /* PBXTargetDependency */,
+			);
+			name = MarsWeatherSlowTests;
+			productName = MarsWeatherSlowTests;
+			productReference = 34DF572A1E848A3800C311BD /* MarsWeatherSlowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34DF56F51E84758C00C311BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = GhostBirdGames;
+				TargetAttributes = {
+					34DF56FC1E84758C00C311BD = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = B875NM54ML;
+						ProvisioningStyle = Automatic;
+					};
+					34DF57101E84758E00C311BD = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = B875NM54ML;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 34DF56FC1E84758C00C311BD;
+					};
+					34DF57291E848A3800C311BD = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = B875NM54ML;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 34DF56FC1E84758C00C311BD;
+					};
+				};
+			};
+			buildConfigurationList = 34DF56F81E84758C00C311BD /* Build configuration list for PBXProject "MarsWeather" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 34DF56F41E84758C00C311BD;
+			productRefGroup = 34DF56FE1E84758D00C311BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34DF56FC1E84758C00C311BD /* MarsWeather */,
+				34DF57101E84758E00C311BD /* MarsWeatherTests */,
+				34DF57291E848A3800C311BD /* MarsWeatherSlowTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34DF56FB1E84758C00C311BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34DF570B1E84758D00C311BD /* LaunchScreen.storyboard in Resources */,
+				34DF57081E84758D00C311BD /* Assets.xcassets in Resources */,
+				34DF57061E84758D00C311BD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34DF570F1E84758E00C311BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34DF57281E848A3800C311BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34DF56F91E84758C00C311BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34DF57031E84758D00C311BD /* ViewController.swift in Sources */,
+				34DF57211E847E6200C311BD /* WeatherModel.swift in Sources */,
+				34DF57231E84805E00C311BD /* MarsRequestModel.swift in Sources */,
+				34EC078F1E85D3DE00185006 /* DarkSkyRequestModel.swift in Sources */,
+				346A191F1E9422E6003F3683 /* ExtensionViewController.swift in Sources */,
+				346A19271E94240D003F3683 /* Reachability.swift in Sources */,
+				346A19291E942518003F3683 /* Alerts.swift in Sources */,
+				34DF57251E8485B200C311BD /* Client.swift in Sources */,
+				34DF57011E84758D00C311BD /* AppDelegate.swift in Sources */,
+				34EC078D1E85D2E800185006 /* Private.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34DF570D1E84758E00C311BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34DF57161E84758E00C311BD /* MarsWeatherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34DF57261E848A3800C311BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34DF572D1E848A3900C311BD /* MarsWeatherSlowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		34DF57131E84758E00C311BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34DF56FC1E84758C00C311BD /* MarsWeather */;
+			targetProxy = 34DF57121E84758E00C311BD /* PBXContainerItemProxy */;
+		};
+		34DF57301E848A3900C311BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34DF56FC1E84758C00C311BD /* MarsWeather */;
+			targetProxy = 34DF572F1E848A3900C311BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		34DF57041E84758D00C311BD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34DF57051E84758D00C311BD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		34DF57091E84758D00C311BD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34DF570A1E84758D00C311BD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		34DF57181E84758E00C311BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		34DF57191E84758E00C311BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		34DF571B1E84758E00C311BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B875NM54ML;
+				INFOPLIST_FILE = MarsWeather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghostbirdgames.MarsWeather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		34DF571C1E84758E00C311BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B875NM54ML;
+				INFOPLIST_FILE = MarsWeather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghostbirdgames.MarsWeather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		34DF571E1E84758E00C311BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = B875NM54ML;
+				INFOPLIST_FILE = MarsWeatherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghostbirdgames.MarsWeatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarsWeather.app/MarsWeather";
+			};
+			name = Debug;
+		};
+		34DF571F1E84758E00C311BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = B875NM54ML;
+				INFOPLIST_FILE = MarsWeatherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghostbirdgames.MarsWeatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarsWeather.app/MarsWeather";
+			};
+			name = Release;
+		};
+		34DF57321E848A3A00C311BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = B875NM54ML;
+				INFOPLIST_FILE = MarsWeatherSlowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghostbirdgames.MarsWeatherSlowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarsWeather.app/MarsWeather";
+			};
+			name = Debug;
+		};
+		34DF57331E848A3A00C311BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = B875NM54ML;
+				INFOPLIST_FILE = MarsWeatherSlowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghostbirdgames.MarsWeatherSlowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarsWeather.app/MarsWeather";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34DF56F81E84758C00C311BD /* Build configuration list for PBXProject "MarsWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34DF57181E84758E00C311BD /* Debug */,
+				34DF57191E84758E00C311BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34DF571A1E84758E00C311BD /* Build configuration list for PBXNativeTarget "MarsWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34DF571B1E84758E00C311BD /* Debug */,
+				34DF571C1E84758E00C311BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34DF571D1E84758E00C311BD /* Build configuration list for PBXNativeTarget "MarsWeatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34DF571E1E84758E00C311BD /* Debug */,
+				34DF571F1E84758E00C311BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34DF57311E848A3A00C311BD /* Build configuration list for PBXNativeTarget "MarsWeatherSlowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34DF57321E848A3A00C311BD /* Debug */,
+				34DF57331E848A3A00C311BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34DF56F51E84758C00C311BD /* Project object */;
+}
