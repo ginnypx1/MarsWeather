@@ -32,3 +32,7 @@ Simply launch the app, and the current weather in your location and the current 
 
 The weather on Earth is [Powered by DarkSky](https://darksky.net/poweredby/)
 The weather on Mars is provided by the [MAAS API](http://marsweather.ingenology.com/)
+
+## Screenshots
+
+A screenshot of "Mars Weather" can be seen at: https://ginnypx1.github.io/MarsWeather/
